@@ -4,9 +4,121 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Space Cat Is Coming</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="theme.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;600;900&family=Roboto+Mono:wght@500;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;600;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/0d9905900b.js" crossorigin="anonymous"></script>
+	<title>FlashType</title>
 </head>
 <body>
-	<h1>Ready to Go</h1>
+	<div class="day-n-night">
+		<i class="fa-solid fa-sun day"></i>
+		<i class="fa-solid fa-moon night"></i>
+	</div>
+  <div class="main">
+	<div class="container">
+		<p class="small-title">What are you waiting for? Start Typing <span id="cursor">|</span></p>
+		<!-- <i class="fa-solid fa-rocket"></i>
+		<i class="fa-solid fa-star"></i>
+		<i class="fa-regular fa-heart"></i>
+		<i class="fa-regular fa-star"></i> -->
+		<h1 class="title"><i class="fa-solid fa-bolt"></i> Flashtype <i class="fa-regular fa-keyboard"></i></h1>
+
+		<div class="func-container">
+
+			<div class="left-border"></div>
+
+			<select name="colors" id="colors">
+				<option value="color"><i class="fa-solid fa-palette"></i> Main Theme</option>
+				<option value="#ffdab9">Peach Puff</option>
+				<option value="#7B68EE">Medium Slate Blue</option>
+				<option value="#228b22">Forest Green</option>
+				<option value="#20b2aa">Light Sea Green</option>
+				<option value="#66CDAA">Medium Aquamarine</option>
+				<option value="#0058a3">Sweden</option>
+				<option value="#f37f83">Strawberry</option>
+				<option value="#003950">Blue Dolphin</option>
+				<option value="#011926">Aurora</option>
+			</select>
+			
+			
+			<div class="func-item time-btn"><i class="fa-regular fa-clock"></i> time
+				<span class="hide--text">Change timer of typing</span>
+			</div>
+			<div class="func-item words-btn"><i class="fa-solid fa-font"></i> words
+				<span class="tooltip--text">Amount of text</span>
+			</div>
+			<div class="right-border"></div>
+			<!-- <i class="fa-regular fa-keyboard"></i> -->
+
+			<!--func-item class add  -->
+			<div class="timers">
+
+				<div class="time-container">
+					<div class="func-item count--time timer--15" data-time="15">15s</div>
+					<div class="func-item count--time timer--30" data-time="30">30s</div>
+					<div class="func-item count--time timer--60" data-time="60">60s</div>
+					<div class="func-item count--time timer--120" data-time="120">120s</div> 
+				</div> 
+					
+
+				<div class="word-container">
+					<div class="func-item count--word word--10" data-word="10">10</div>
+					<div class="func-item count--word word--30" data-word="30">30</div>
+					<div class="func-item count--word word--50" data-word="50">50</div>
+					<div class="func-item count--word word--100" data-word="100">100</div> 
+				</div>
+					
+				
+			</div>
+
+		</div>
+
+		<h1 id="result--text"></h1>
+		<div class="logic-container">
+			<div class="btn-container">
+				<button class="start-btn">Start Typing</button>
+			</div>
+			<div class="timer">01:00</div>
+			<div class="char-count">0</div>
+			<div id="words">
+		
+			</div>
+			<div id="result-container">
+				<div class="result" id="time-container">
+					<p>time</p>
+					<span id="seconds">0s</span>
+				</div>
+
+				<div class="result" id="char-container">
+					<p>characters with spaces / words</p>
+					<span id="character">0</span>
+				</div>
+
+				<div class="result" id="percentage-container">
+					<p>percentage rations</p>
+					<span id="percent">0%</span>
+				</div>
+				<div class="result">
+					<button class="new-test_btn"><i class="fa-solid fa-arrows-rotate"></i> New Test</button>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p>Version 1.0</p>
+			<p>Created by "Spacecat"</p>
+			<p>© Copyright by Roman Matantsev</p>
+		</div>
+	 </div>
+   </div>
+
+	<script type="module" src="/js/script.js"></script>
 </body>
 </html>
