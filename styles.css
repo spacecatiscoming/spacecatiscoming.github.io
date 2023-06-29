@@ -4,6 +4,10 @@
 	padding: 0;
 }
 
+html {
+	height: 100%; 
+}
+
 body {
 	font-size: 16px;
 	position: relative;
@@ -11,6 +15,7 @@ body {
 	/* background-color: #323437; */
 	background-color: #011926;
 	transition: all 1s;
+	min-height: 100vh;
 }
 
 .day-n-night {
@@ -23,11 +28,7 @@ body {
 	margin: 1rem;
 	transition: all 1s;
 }
-.main {
-	/* display: flex;
-	justify-content: center; */
-	margin-top: .5rem;
-}
+
 
 .small-title {
 	color: #fff;
@@ -44,7 +45,8 @@ body {
 	position: absolute;
 	font-weight: 900;
 	font-size: 3.2rem;
-	left: 3.7%;
+	left: 2.7%;
+	top: 5rem;
 	margin-top: 3rem;
 	opacity: 0;
 	transition: opacity .5s;
@@ -57,22 +59,27 @@ body {
 	max-width: 300px;
 }
 .container {
+	/* display: flex;
+	flex-direction: column;
+	justify-content: space-evenly; */
 	position: relative;
 	margin-top: 1rem;
-	padding: 1rem;
+	/* padding: 1rem; */
 	max-width: 1250px;
 	/* min-height: 100vh; */
 	margin: auto;
+	/* border: 1px solid #fff; */
 }
 
 .logic-container {
 	margin: 1rem;
 	padding: 1rem;
-	height: 73vh;
+	min-height: 75vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	/* justify-content: space-around; */
 	overflow: hidden;
+	/* border: 1px solid #fff; */
 }
 
 .func-container {
@@ -80,7 +87,8 @@ body {
 	border-radius: 0.5rem;
 	background-color: #2c2e31;
 	padding: 0.75rem 0.5rem 0.7rem 1rem;
-	margin: auto;
+	/* margin: auto; */
+	margin-left: 17%;
 	display: flex;
 	justify-content: space-evenly;
 	max-width: 800px;
@@ -347,6 +355,7 @@ body {
 .footer {
 	color: #fff;
 	margin-left: 2rem;
+	/* margin-top: auto; */
 	display: flex;
 }
 
